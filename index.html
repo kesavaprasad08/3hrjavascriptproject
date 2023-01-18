@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>expense Tracker</title>
+        <link rel ="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Seller's Admin page with total stock value</h1>
+        </header>
+        <section class="container">
+        <form id = "my-form" onsubmit="AddNewProduct(event)">
+        <div>
+            <label for ="sellingPrice">Selling Price:</label>
+            <input id = 'sellprice'  type="number" name="sellingprice" required>
+    
+        <label for ="productName">Product Name:</label>
+            <input id = 'prodName' type="text" name="productname" required>
+        
+        
+    <button >Add Product</button></form>
+</div>
+<h1>Products</h1>
+
+<ul id ='listOfProducts'></ul>
+<div>
+<p id ="totalValue">Total value of the Product(s) : Rs.0</p>
+</div>
+</section>
+<script src ="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    </body>
+
+</html>
